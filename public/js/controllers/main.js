@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
         if(q){
         $.ajax({
-            url: "/contacto",
+            url: "http://websitegosmart.azurewebsites.net/contacto",
             cache: false,
             data: {email: email, nombre: nombre ,fono : fono  },
             type: "POST"

@@ -43,8 +43,8 @@ exports.index = function(req, res){
         var smtpTransport = nodemailer.createTransport("SMTP",{
             service: "Gmail",
             auth: {
-                user: 'olivagus@gmail.com',
-                pass: 'wathsupman"'
+                user: 'robotgosmart@gmail.com',
+                pass: 'robotpass'
             }
         });
 
