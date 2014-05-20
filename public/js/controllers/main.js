@@ -34,13 +34,14 @@ $( document ).ready(function() {
 
         if(q){
         $.ajax({
-            url: "http://websitegosmart.azurewebsites.net/contacto",
+            url: "/contacto",
             cache: false,
             data: {email: email, nombre: nombre ,fono : fono  },
             type: "POST"
         })
-            .done(function( html ) {
+            .done(function() {
                 p = false;
+
                 $( "#enviar" ).text('Gracias, Mensaje Enviado!');
             }
         );
